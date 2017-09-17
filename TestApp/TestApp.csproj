@@ -211,7 +211,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NgApp2Controller.cs" />
-    <Compile Include="Controllers\NgAppController.cs" />
+    <Compile Include="Controllers\CrudController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -290,7 +290,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="src\tsconfig.json" />
-    <Content Include="Views\NgApp\Index.cshtml" />
+    <Content Include="Views\Crud\Index.cshtml" />
     <Content Include="Views\NgApp2\Index.cshtml" />
     <Content Include="Views\Shared\_AngularLayout.cshtml" />
   </ItemGroup>
@@ -312,10 +312,10 @@
     <TypeScriptCompile Include="src\app\ng-app-2\ng-app-2.component.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\ng-app-2\ng-app-2-routing.module.ts" />
-    <TypeScriptCompile Include="src\app\ng-app\ng-app.component.ts" />
+    <TypeScriptCompile Include="src\app\crud\crud.component.ts" />
     <TypeScriptCompile Include="src\app\ng-app-2\ng-app-2.module.ts" />
-    <TypeScriptCompile Include="src\app\ng-app\ng-app-routing.module.ts" />
-    <TypeScriptCompile Include="src\app\ng-app\ng-app.module.ts" />
+    <TypeScriptCompile Include="src\app\crud\crud-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\crud\crud.module.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
