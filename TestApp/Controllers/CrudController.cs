@@ -8,7 +8,7 @@ namespace TestApp.Controllers
 {
     public class CrudController : Controller
     {
-        // GET: NgApp
+        // GET: Crud
         public ActionResult Index()
         {
             return View();
