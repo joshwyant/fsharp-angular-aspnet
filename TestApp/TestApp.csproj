@@ -207,11 +207,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Api\ApiAreaRegistration.cs" />
+    <Compile Include="Areas\Api\Controllers\CrudController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NgApp2Controller.cs" />
-    <Compile Include="Controllers\NgAppController.cs" />
+    <Compile Include="Controllers\CrudController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -241,6 +243,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="package.json" />
+    <Content Include="Areas\Api\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -290,12 +293,14 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="src\tsconfig.json" />
-    <Content Include="Views\NgApp\Index.cshtml" />
+    <Content Include="Views\Crud\Index.cshtml" />
     <Content Include="Views\NgApp2\Index.cshtml" />
     <Content Include="Views\Shared\_AngularLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Api\Models\" />
+    <Folder Include="Areas\Api\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -312,13 +317,19 @@
     <TypeScriptCompile Include="src\app\ng-app-2\ng-app-2.component.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\ng-app-2\ng-app-2-routing.module.ts" />
-    <TypeScriptCompile Include="src\app\ng-app\ng-app.component.ts" />
+    <TypeScriptCompile Include="src\app\crud\crud.component.ts" />
     <TypeScriptCompile Include="src\app\ng-app-2\ng-app-2.module.ts" />
-    <TypeScriptCompile Include="src\app\ng-app\ng-app-routing.module.ts" />
-    <TypeScriptCompile Include="src\app\ng-app\ng-app.module.ts" />
+    <TypeScriptCompile Include="src\app\crud\crud-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\crud\crud.module.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Crud.Business\Crud.Business.fsproj">
+      <Project>{09547e40-b859-49b7-91cf-2f9f3092bda3}</Project>
+      <Name>Crud.Business</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace TestApp.Controllers
 {
-    public class NgAppController : Controller
+    public class CrudController : Controller
     {
-        // GET: NgApp
+        // GET: Crud
         public ActionResult Index()
         {
             return View();
